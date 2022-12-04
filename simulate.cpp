@@ -7,7 +7,7 @@ std::map<int, PFContext> bots;
 void SimulateFrame(bool simulating)
 {
 //	DevMsg("SimulateFrame\n");
-	
+		
 	std::vector<int> obsolete;
 	
 	for (auto& pair : bots) {
