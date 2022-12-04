@@ -37,7 +37,7 @@ void SimulateFrame(bool simulating)
 
 void RemoveBot(int idx)
 {
-//	g_pSM->LogMessage(myself, "Removing obsolete bot #%d", idx);
+	g_pSM->LogMessage(myself, "Removing obsolete bot #%d", idx);
 	
 	bots.at(idx).Call_EntityGone(idx);
 	bots.erase(idx);

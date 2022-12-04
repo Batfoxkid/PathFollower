@@ -59,6 +59,8 @@ static cell_t PF_GetLastKnownArea(IPluginContext *pCtx, const cell_t *params)
 
 static cell_t PF_Create(IPluginContext *pCtx, const cell_t *params)
 {
+	g_pSM->LogMessage(myself, "PF_Create::\"%s\"", pCtx->GetPublicInfo()->name);
+	
 	int bot_entidx               = params[1];
 	float step_height            = sp_ctof(params[2]);
 	float max_jump_height        = sp_ctof(params[3]);
